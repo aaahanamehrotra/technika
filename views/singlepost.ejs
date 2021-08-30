@@ -1,0 +1,16 @@
+        <div class="single-post">
+        <h2 class="post-title"><%= data.title %></h2>
+        <div class="details">
+        <div class="post-username">
+        <h5 class="posted-by"><%= data.username %></h5>
+        </div>
+        <div class="time-details">
+        <h5 class="posted-on"><%= data.createdAt.toUTCString().slice(0, 16) %></h5>
+        <h5 class="posted-at"><%= data.createdAt.toUTCString().slice(16) %></h5>
+        </div>
+        </div>
+        <div class="post-text"><%= data.article %></div>
+        </div>
+        <div>
+        <a href="/posts" class="allposts">View all posts</a>
+        </div>
